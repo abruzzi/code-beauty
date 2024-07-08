@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 import hljs from "highlight.js";
-import "highlight.js/styles/srcery.css";
+import "highlight.js/styles/night-owl.css";
 
 const code = `
 it('formats title in title case when feature x is on', () => {
