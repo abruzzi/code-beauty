@@ -1,0 +1,20 @@
+modules:
+  macro:
+    - key: code-beauty-macro
+      resource: main
+      resolver:
+        function: resolver
+      title: "Code Beauty"
+      description: Make code snippet prettier
+      categories:
+        - formatting
+  function:
+    - key: resolver
+      handler: index.handler
+resources:
+  - key: main
+    path: static/code-beauty/build
+app:
+  runtime:
+    name: nodejs18.x
+  id: ari:cloud:ecosystem::app/9aeecd72-f766-4738-93ce-7dad90bb3d82
